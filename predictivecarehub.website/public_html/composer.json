@@ -1,0 +1,7 @@
+{
+    "require": {
+        "php": ">=8.1",
+        "symfony/mailer": "^6.4",
+        "ramsey/uuid": "^4.7"
+    }
+}

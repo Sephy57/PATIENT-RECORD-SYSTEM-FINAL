@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --brand-ink: #0b1324;
+  --brand-primary: #0f172a;
+  --brand-accent: #0d9488;
+  --brand-accent-dark: #0f766e;
+  --brand-soft: #f0fdfa;
+  --brand-border: #e2e8f0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-family-karla {
+  font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+.bg-sidebar {
+  background: linear-gradient(180deg, #0b1324 0%, #0f172a 100%) !important;
+}
+
+.text-primary {
+  color: var(--brand-ink) !important;
+}
+
+.bg-border {
+  border-color: #fff !important;
+}
+
+.hover-btn:hover {
+  background: var(--brand-accent-dark) !important;
+}
+.upgrade-btn {
+  background: var(--brand-accent) !important;
+}
+.upgrade-btn:hover {
+  background: var(--brand-accent-dark) !important;
+}
+.active-nav-link {
+  background: rgba(13, 148, 136, 0.18) !important;
+  color: #5eead4 !important;
+  border-left: 3px solid var(--brand-accent);
+}
+
+.open_toast {
+  display: block;
+}
+
+.services-item:hover {
+  transform: translateY(-4px) !important;
+  transition-delay: 0ms !important;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
+    backdrop-filter !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
+.nav-item {
+  color: #cbd5e1;
+  border-left: 3px solid transparent;
+  transition: background-color 150ms ease, color 150ms ease;
+}
+
+.nav-item:hover {
+  background: rgba(148, 163, 184, 0.1) !important;
+  color: #f8fafc;
+}
+.account-link:hover {
+  background: var(--brand-primary) !important;
+  color: #f8fafc !important;
+}
+
+.accent-color {
+  background-color: var(--brand-accent) !important;
+}
+
+.faded-background {
+  background-color: rgba(13, 148, 136, 0.75) !important;
+}
+
+.member-background {
+  background-color: rgba(13, 148, 136, 0.92);
+}
+
+.banner-bg {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.35)
+    ),
+    url('../assets/banner.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.precprev-bg {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url('../assets/precprev.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-doctor {
+  background-position: bottom center;
+  background-size: 180%;
+  background-repeat: no-repeat;
+}
+
+.header-clip {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Global component polish — applies everywhere without touching every template */
+button,
+.btn,
+a.rounded,
+a.rounded-full {
+  transition: transform 120ms ease, box-shadow 120ms ease, background-color 150ms ease,
+    opacity 150ms ease;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='date'],
+input[type='tel'],
+select,
+textarea {
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+input[type='date']:focus,
+input[type='tel']:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.25);
+}
+
+table.dataTable {
+  border-collapse: separate !important;
+  border-spacing: 0;
+}
+
+table.dataTable thead th {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  border-bottom: 1px solid var(--brand-border) !important;
+}
+
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+  color: #334155;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.25;
+  border-width: 1px;
+  border-radius: 0.5rem;
+  border-color: var(--brand-border);
+  background-color: #f8fafc;
+}
+
+/*Row Hover*/
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+  background-color: var(--brand-soft);
+}
+
+/*Pagination Buttons*/
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+/*Pagination Buttons - Current selected */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  color: #fff !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background: var(--brand-accent) !important;
+  border: 1px solid transparent;
+}
+
+/*Pagination Buttons - Hover */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  color: #fff !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  background: var(--brand-accent-dark) !important;
+  border: 1px solid transparent;
+}
+
+table.dataTable.no-footer {
+  border-bottom: 1px solid var(--brand-border);
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+  background-color: var(--brand-accent) !important;
+}
+
+/* divider */
+.custom-shape-divider-top-1691905820 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1691905820 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.custom-shape-divider-top-1691905820 .shape-fill {
+  fill: #f8fafc;
+}
+
+.slider {
+  animation: zoom-in-zoom-out 1s ease;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    opacity: 0.75;
+    transform: scale(0.95, 0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+.bar-background {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.85),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url('../assets/chart-bg.png');
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.pie-background {
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url('../assets/chart-bg2.png');
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel > div {
+  margin: 0;
+  padding: 0;
+}
+
+.slides {
+  display: none !important;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slides[data-active] {
+  display: block !important;
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0 0.5rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+}

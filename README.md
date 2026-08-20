@@ -1,32 +1,11 @@
 http://patient_record.test:8080/login patient login
 http://patient_record.test:8080/register -> patient register
-http://patient_record.test:8080/admin-> admin login
+http://patient_record.test:8080/admin -> admin login
 http://patient_record.test:8080/doctor -> doctor login
- 
-admin it
-username: adminit
-password: Access02;
- 
-admin mrm
-username: adminmrm
-password: 123
- 
-admin him
-username: adminhim
-password: Access02;
 
-H.I.M
-cristel 
-Cristel57.
+Account credentials are no longer stored in this file. See your password manager /
+the team's secrets vault for admin, doctor, and staff logins.
 
-IT staff
-Cristel57
-Cristel57.
-
-MRM
-cristelbulbol
-Cristel57.
-
-DOCTOR
-Jomari
-Jomari57.
+**All credentials previously listed here were committed to git history in plaintext
+and must be treated as compromised — rotate every one of them (admin/IT/HIM/MRM
+accounts, doctor accounts) before this system handles real patient data.**
